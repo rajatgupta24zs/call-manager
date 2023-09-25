@@ -1,0 +1,41 @@
+.nav{
+    /* background: #232323; */
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #232323;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+.tabs {
+    padding: 1rem 0;
+}
+
+p{
+    margin: 0;
+}
+
+.tabs:hover {
+    background: #999;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+}
+
+img{
+    margin: 1.5rem 1rem;
+    width: 3rem;
+}
+
+svg.icon {
+    margin: 1rem;
+}

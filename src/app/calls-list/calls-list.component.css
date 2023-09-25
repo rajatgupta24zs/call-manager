@@ -1,0 +1,28 @@
+.container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 1px solid #ddd;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.fade-text {
+    margin-bottom: 1.5rem;
+    color: #999;
+}
+
+#btn-call {
+    background-color: rgb(1, 171, 171);
+    border-radius: 0;
+    color: #fff;
+}
+
+svg {
+    margin-bottom: 1rem;
+}
