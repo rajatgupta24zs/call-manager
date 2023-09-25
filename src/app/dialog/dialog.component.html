@@ -1,50 +1,50 @@
 <div class="header">
     <h2>Add a new call</h2>
-    <button>x</button>
+    <p>X</p>
 </div>
 
 <hr>
 
 <form>
     <div class="section">
-        <label for="">Call Title:</label>
-        <input type="text">
+        <label for=""><span class="red-text">*</span> Call Title</label>
+        <input type="text" placeholder="Enter the call title here">
     </div>
     
     <h3>HCP Details</h3>
     
     <div class="selects">
         <div class="section">
-            <label for="">Call Title:</label>
-            <select class="custom-select">
-                <option selected>Open this select menu</option>
+            <label for=""><span class="red-text">*</span> Specialty</label>
+            <select class="custom-select" aria-placeholder="Open this select menu">
+                <option>Open this select menu</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
             </select>
         </div>
         <div class="section">
-            <label for="">Call Title:</label>
+            <label for="">Attitudinal</label>
             <select class="custom-select">
-                <option selected>Open this select menu</option>
+                <option>Open this select menu</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
             </select>
         </div>
         <div class="section">
-            <label for="">Call Title:</label>   
+            <label for="">Potential Rating</label>   
             <select class="custom-select">
-                <option selected>Open this select menu</option>
+                <option>Open this select menu</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
             </select>
         </div>
         <div class="section">
-            <label for="">Call Title:</label>
+            <label for="">MR+ Segments</label>
             <select class="custom-select">
-                <option selected>Open this select menu</option>
+                <option>Open this select menu</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
@@ -52,14 +52,32 @@
         </div>
     </div>
     <div class="section textarea-section">
-        <label for="">Call Title:</label>
-        <textarea></textarea> 
+        <label for="">Additional Comments</label>
+        <textarea placeholder="Enter comments"></textarea> 
+    </div>
+
+    <div class="section textarea-section">
+        <label for="">Call Recording</label>
+        <div id="dropContainer" >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="rgb(1, 171, 171)" height="2rem" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M121 32C91.6 32 66 52 58.9 80.5L1.9 308.4C.6 313.5 0 318.7 0 323.9V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V323.9c0-5.2-.6-10.4-1.9-15.5l-57-227.9C446 52 420.4 32 391 32H121zm0 64H391l48 192H387.8c-12.1 0-23.2 6.8-28.6 17.7l-14.3 28.6c-5.4 10.8-16.5 17.7-28.6 17.7H195.8c-12.1 0-23.2-6.8-28.6-17.7l-14.3-28.6c-5.4-10.8-16.5-17.7-28.6-17.7H73L121 96z"/></svg>
+            <h3 class="drop-text">Click on drop a file here to upload</h3>
+            <p class="fade-drop-text">Supported formats: .WAV, .ABC, .XYZ only.</p>
+            <p class="fade-drop-text">Maximum File Size: XX MB</p>
+         </div>
+        <input type="file" accept=".abc, .xyz, .wav">
+    </div>
+
+    <div class="checkbox">
+        <label for="">
+            <input type="checkbox">
+            I, hereby confirm that I have read out the consent from the smart of the call and have obtained the neccessary consent from the meeting attendee to upload this record.
+        </label>
     </div>
 </form>
 
 <hr>
 
 <div class="footer">
-    <button>Cancel</button>
-    <button>Add</button>
+    <button class="btn btn-success">Add</button>
+    <button class="btn">Cancel</button>
 </div>
